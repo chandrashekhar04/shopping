@@ -1,0 +1,142 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto Condensed', sans-serif;
+}
+#shopping{
+  display: flex;
+  align-items: center;
+  margin: 3rem auto;
+  width: 70%;
+}
+#shopping .product{
+  width: 23%;
+  height: 450px;
+  margin: 0 1%;
+  position: relative;
+  display: flex;
+  overflow: hidden;
+
+}
+
+#shopping .product:hover .content-div{
+  top: 20em;
+
+}
+#shopping .product .photo-div{
+  height: 80%;
+}
+#shopping .product img{
+  width: 100%;
+  height: 100%;  
+  transition-property: transform;
+  transition-duration: 0.5s;
+}
+
+#shopping .product img:hover{
+  transform: scale(1.1);
+}
+
+#shopping .product .content-div{
+  width: 100%;
+  text-align: center;
+  background-color: rgb(255, 255, 255);
+  position: absolute;
+  top: 22.5em;
+  left: 0;
+  transition-property: top, transform;
+  transition-duration: 0.5s;
+}
+
+#shopping .product .photo-div img:hover .content-div{
+  top: 20em;
+}
+
+#shopping .product .content-div:hover{
+  top: 20em;
+}
+
+#shopping .product .content-div h3{
+  font-size: 0.9rem;
+  margin-bottom: 0.5rem;
+  margin-top: 1rem;
+}
+
+#shopping .product .content-div .price{
+  margin-bottom: 0.5rem;
+}
+
+#shopping .product .content-div .size{
+  display: flex;
+  justify-content: center;
+  margin-bottom: 0.5rem;
+}
+#shopping .product .content-div .size span {
+  border: 1px solid;
+  margin: 0 0.25rem;
+  font-size: .7rem;
+  height: 20px;
+  width: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#shopping .product .content-div a{
+  text-decoration: none;
+  background-color: green;
+  color: #fff;
+  padding: .5rem 1rem;
+  display: inline-block;
+  visibility: hidden;
+  transition-property: visibility;
+  transition-duration: 0.2s;
+  transition-delay: 0.2s;
+}
+
+#shopping .product:hover .content-div a{
+  visibility: visible;
+}
+
+
+#shopping .product .icon{
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+
+#shopping .product .icon a:hover{
+  color: green ;
+  transform: scale(1.1);
+} 
+
+
+
+.icon1{
+  color: black;
+  position: absolute;
+  top: 10px;
+  right: -25px;
+  font-size: 23px;
+  transition-property: right;
+  transition-duration: 0.5s;
+}
+
+#shopping .product:hover .icon1{
+  right: 10px;
+}
+
+.icon2{
+  color: black;
+  position: absolute;
+  top: 45px;
+  right: -25px;
+  font-size: 23px;
+  transition-property: right;
+  transition-duration: 0.7s;
+}
+
+#shopping .product:hover .icon2{
+  right: 10px;
+}
